@@ -30,8 +30,6 @@ function enigma(input) {
 
     rotor = rotor_settup
 
-    rotor
-
     input = input.toLowerCase()
 
     var encoded = ""
@@ -62,6 +60,7 @@ function convert_charactor(char) {
     return alphabet[char]
 }
 
+/*
 function step_rotors() {
     rotor.left = rotatestring(rotor.left)
     rotor.leftAlp = rotatestring(rotor.leftAlp)
@@ -71,3 +70,4 @@ function step_rotors() {
 function rotatestring(string) {
     return string.substr(1, string.length) + string[0]
 }
+*/
