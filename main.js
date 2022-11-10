@@ -38,8 +38,8 @@ function enigma(input) {
     for (var i = 0; i < input.length; i++) {
         if (!alphabet.includes(input[i])) {encoded+=input[i]; continue}
         encoded += convert_charactor(input[i])
-        step_rotors()
-        console.log(rotor)
+        //step_rotors()
+        //console.log(rotor)
     }
     
     output.innerHTML = encoded
