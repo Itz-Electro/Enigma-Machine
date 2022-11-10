@@ -17,9 +17,8 @@ var rotor_settup = {
         "abcdefghijklmnopqrstuvwxyz",
 }
 var rotor = {}
-//plugboard=alphabet
 
-plugboard = alphabet
+//plugboard = alphabet
 
 enigma("a")
 
@@ -32,6 +31,7 @@ function enigma(input) {
 
     input = input.toLowerCase()
 
+    // Repeat through input and convert each charactor
     var encoded = ""
     for (var i = 0; i < input.length; i++) {
         if (!alphabet.includes(input[i])) {encoded+=input[i]; continue}
@@ -40,6 +40,7 @@ function enigma(input) {
         //console.log(rotor)
     }
     
+    // Display output
     output.innerHTML = encoded
 }
 
