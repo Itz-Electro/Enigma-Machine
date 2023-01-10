@@ -9,6 +9,7 @@ function swap(allPairs) {
         console.log(a,b,alphabet.indexOf(a),alphabet.indexOf(b))
         newboard[alphabet.indexOf(a)] = b
     }
+    plugboard = newboard
 }
 
 function returnPB() {
